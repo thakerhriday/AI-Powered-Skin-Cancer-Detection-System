@@ -1,0 +1,180 @@
+/* General Styling */
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #f4f4f9;
+    color: #333;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
+  
+  /* Main Container */
+  .dashboard-container {
+    background: #ffffff;
+    width: 90%;
+    max-width: 500px;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.1);
+    text-align: center;
+  }
+  
+  /* Title */
+  h1 {
+    color: #2c3e50;
+    font-size: 24px;
+    font-weight: bold;
+  }
+  
+  /* Description */
+  .description {
+    font-size: 14px;
+    color: #7f8c8d;
+    margin-bottom: 20px;
+  }
+  
+  /* Upload Box */
+  .upload-box {
+    display: block;
+    border: 2px dashed #3498db;
+    padding: 20px;
+    border-radius: 8px;
+    text-align: center;
+    cursor: pointer;
+    transition: all 0.3s ease;
+  }
+  
+  .upload-box:hover {
+    background-color: rgba(52, 152, 219, 0.1);
+  }
+  
+  .upload-area {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 120px;
+  }
+  
+  .upload-text {
+    font-size: 14px;
+    color: #3498db;
+    font-weight: bold;
+  }
+  
+  .preview-image {
+    max-width: 100%;
+    max-height: 120px;
+    border-radius: 6px;
+    margin-top: 10px;
+  }
+  
+  /* Hidden Input */
+  .hidden {
+    display: none;
+  }
+  
+  /* Buttons */
+  button {
+    background-color: #3498db;
+    color: white;
+    border: none;
+    padding: 12px 20px;
+    font-size: 16px;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    margin-top: 15px;
+    width: 100%;
+  }
+  
+  button:hover {
+    background-color: #2980b9;
+  }
+  
+  button:disabled {
+    background-color: #bdc3c7;
+    cursor: not-allowed;
+  }
+  
+  /* Loading Spinner */
+  .loading {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .spinner {
+    width: 20px;
+    height: 20px;
+    margin-right: 8px;
+    animation: spin 1s linear infinite;
+  }
+  
+  @keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+  }
+  
+  /* Error Message */
+  .error-message {
+    color: #e74c3c;
+    font-size: 14px;
+    margin-top: 10px;
+  }
+  
+  /* Result Box */
+  .result-box {
+    margin-top: 20px;
+    padding: 15px;
+    border-radius: 8px;
+    font-size: 18px;
+    font-weight: bold;
+  }
+  
+  .benign {
+    background-color: #2ecc71;
+    color: white;
+  }
+  
+  .malignant {
+    background-color: #e74c3c;
+    color: white;
+  }
+  
+  /* PDF Upload */
+  .file-input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #bdc3c7;
+    border-radius: 6px;
+    margin-top: 10px;
+  }
+  
+  .upload-pdf-button {
+    background-color: #2c3e50;
+  }
+  
+  .upload-pdf-button:hover {
+    background-color: #1a252f;
+  }
+  
+  /* PDF Link */
+  .pdf-link {
+    margin-top: 15px;
+    font-size: 14px;
+    color: #2c3e50;
+  }
+  
+  .pdf-link a {
+    color: #2980b9;
+    text-decoration: none;
+    font-weight: bold;
+  }
+  
+  .pdf-link a:hover {
+    text-decoration: underline;
+  }
+  

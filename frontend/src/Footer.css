@@ -1,0 +1,26 @@
+/* ======= Footer Styles ======= */
+.footer {
+    background: rgba(0, 0, 0, 0.2); /* Transparent dark */
+    backdrop-filter: blur(8px);
+    color: white;
+    text-align: center;
+    padding: 15px;
+    width: 100%;
+    font-size: 14px;
+    position: fixed; /* ✅ Stick to bottom */
+    bottom: 0;
+    left: 0;
+}
+  
+.footer a {
+    color: #ffd700;
+    margin: 0 8px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: all 0.3s ease-in-out;
+}
+  
+.footer a:hover {
+    color: #ffffff;
+    text-decoration: underline;
+}

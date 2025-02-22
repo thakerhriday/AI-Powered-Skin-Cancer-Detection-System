@@ -1,0 +1,72 @@
+/* ======= Navbar Styles ======= */
+.navbar {
+    background: rgba(255, 255, 255, 0.1); /* Transparent white */
+    backdrop-filter: blur(10px); /* Blur effect */
+    padding: 12px 20px;
+    position: fixed; /* Fix it to the top */
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start; /* ✅ Align items to the left */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.nav-container {
+    max-width: 1200px;
+    width: 100%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    font-size: 20px;
+    font-weight: bold;
+    color: white;
+    text-decoration: none;
+    transition: color 0.3s ease-in-out;
+    margin-left: 20px; /* ✅ Moves logo to the left */
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+    margin-left: auto; /* ✅ Push links to the right */
+}
+
+.nav-links li {
+    display: inline;
+}
+
+.nav-links a {
+    color: white;
+    text-decoration: none;
+    font-weight: 500;
+    transition: all 0.3s ease-in-out;
+    padding: 8px 12px;
+    border-radius: 6px;
+}
+
+.nav-links a:hover {
+    background: rgba(255, 255, 255, 0.2);
+}
+
+/* ✅ Improved Login Button */
+.login-button {
+    background: linear-gradient(to right, #667eea, #764ba2);
+    color: white;
+    padding: 8px 15px;
+    border-radius: 8px;
+    transition: all 0.3s ease-in-out;
+    font-weight: bold;
+}
+
+.login-button:hover {
+    background: linear-gradient(to right, #764ba2, #667eea);
+    transform: scale(1.05);
+}
